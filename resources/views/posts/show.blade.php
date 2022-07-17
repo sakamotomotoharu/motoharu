@@ -9,7 +9,9 @@
     <body>
         <h1>Blog Name</h1>
         <div class='post'>
-            <a href='/posts/{ $posts=>id}'> </a><h2 class='title'>{{ $post->title }}</h2>
+            <p class="edit">[<a href="/posts/{{ $post->id }}/edit">edit</a>]</p>
+            <a href='/posts/{{ $post->id}}'> </a>
+             <h2 class='title'>{{ $post->title }}</h2>
              <p class='body'>{{ $post->body }}</p>
              <P class='updated_at'>{{ $post->updated_at }}</p>
         </div>
