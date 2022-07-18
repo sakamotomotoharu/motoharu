@@ -16,4 +16,5 @@ Route::get('/create', 'PostController@create');
 Route::post('/posts', 'PostController@store');
 Route::get('/posts/{post}/edit', 'PostController@edit');
 Route::put('/posts/{post}', 'PostController@update');
+Route::delete('/posts/{post}', 'PostController@delete');
 ?>
